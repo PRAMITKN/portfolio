@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   return (
-    <nav className="fixed top-14 left-0 w-full bg-[#161b22] border-b border-gray-700 text-blue-400 text-sm flex justify-center space-x-6 px-6 py-3 z-50">
-      <Link 
+    <nav className="hidden md:flex fixed top-14 left-0 w-full bg-[#161b22] border-b border-gray-700 text-blue-400 text-sm justify-center space-x-6 px-6 py-3 z-50">
+      <Link   
         to="about" 
         smooth={true} 
         duration={1000} 
         spy={true} 
-        
         className="hover:text-white cursor-pointer transition-all"
       >
         About
@@ -20,7 +19,6 @@ const NavBar = () => {
         smooth={true} 
         duration={1000} 
         spy={true} 
-    
         className="hover:text-white cursor-pointer transition-all"
       >
         Skills
@@ -31,7 +29,6 @@ const NavBar = () => {
         smooth={true} 
         duration={1000} 
         spy={true} 
-      
         className="hover:text-white cursor-pointer transition-all"
       >
         Projects
@@ -42,7 +39,6 @@ const NavBar = () => {
         smooth={true} 
         duration={1000} 
         spy={true} 
-    
         className="hover:text-white cursor-pointer transition-all"
       >
         Contact
@@ -52,3 +48,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
