@@ -18,8 +18,8 @@ const Header = () => {
           PRAMIT'S / PORTFOLIO
         </h1>
 
-        {/* Buttons - Right on big screens, center on small screens */}
-        <div className="flex flex-wrap justify-center md:justify-end gap-2 md:gap-x-3 mt-3 md:mt-0 w-full md:w-auto">
+        {/* Buttons - Fixed Wrapping Issue */}
+        <div className="flex flex-nowrap justify-center md:justify-end gap-x-2 mt-3 md:mt-0 w-full md:w-auto">
           <button className="bg-[#238636] px-3 py-1 rounded text-sm text-white font-medium">
             Code
           </button>
@@ -51,3 +51,4 @@ const Header = () => {
 };
 
 export default Header;
+
